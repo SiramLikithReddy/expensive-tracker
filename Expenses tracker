@@ -1,0 +1,29 @@
+#Expenses tracker 2.0
+Month=input("Enter the month:")
+try:
+    salary=int(input("Enter you're salary: "))
+    print(f"you're salary:{salary}")
+except ValueError:
+    print("check your data type")
+
+class Expenses:
+    def Categories(self):
+        Items=["Food","Fees","Rent","Travelling","Entertainment"]
+        Monthly_Expenses={}
+        for Item in Items:
+            try:
+                Monthly_Expenses[Item]=int(input(f"{Item} Expenses"))
+            except ValueError:
+                print("Check you're datatype")
+            finally:
+                print("Use you're cash Wisely")
+        return Monthly_Expenses
+
+expenses_data=Expenses()
+Monthly_Expenses=expenses_data.Categories()
+Total_Expenses=sum(Monthly_Expenses.values())
+savings=salary-Total_Expenses
+print(f"Total expenes in {Month} is {Total_Expenses}")
+print(f"you're savings:{savings}")
+with open("Expenses tracker 2.0","a") as file:
+    file.write(f"In {Month} your savings are {savings}, Use cash wisely")
