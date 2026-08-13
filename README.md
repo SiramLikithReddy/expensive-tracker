@@ -13,6 +13,9 @@ Class-based student grade manager — calculates total, percentage, and letter g
 ### car.py
 Simple OOP practice — a Car class with attributes and a fuel-tracking method, including input validation.
 
+### contact-book.py
+Class-based contact manager — stores a contact's details, dials a number with input validation, and saves contact info to file.
+
 ## How to run
 Each file can be run independently:
 
