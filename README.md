@@ -15,6 +15,9 @@ Simple OOP practice — a Car class with attributes and a fuel-tracking method, 
 
 ### contact-book.py
 Class-based contact manager — stores a contact's details, dials a number with input validation, and saves contact info to file.
+### library.py
+
+Class-based library management system — tracks books by author and title, handles borrowing (with copy-count validation), adding new titles, and returning items with identity verification against registered members.
 
 ## How to run
 Each file can be run independently:
